@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      // то куда производится сборка
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "esnext",
+      // в какую спецификацию компилируем
+      "target": "es5",
+      "jsx": "react-jsx",
+      "baseUrl": ".",
+      "allowJs": true,
+      "moduleResolution": "node",
+      // esmoduleinterop позволяет работать с пакетами commonjs как с обычными пакетами с помощью import
+      "esModuleInterop": true,
+      // allow... позволяет использовать import без звездочки
+      "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+  }
