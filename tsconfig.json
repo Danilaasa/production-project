@@ -8,12 +8,15 @@
       "target": "es5",
       "jsx": "react-jsx",
       "baseUrl": ".",
+      "paths": {
+        "*": ["./src/*"]
+      },
       "allowJs": true,
       "moduleResolution": "node",
       // esmoduleinterop позволяет работать с пакетами commonjs как с обычными пакетами с помощью import
       "esModuleInterop": true,
       // allow... позволяет использовать import без звездочки
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
     },
     "ts-node": {
     "compilerOptions": {
