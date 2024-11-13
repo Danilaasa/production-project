@@ -1,7 +1,6 @@
-import webpack from "webpack"
+import webpack, { HotModuleReplacementPlugin } from "webpack"
 import HtmlWebpackPlugin from "html-webpack-plugin"
-import path from "path"
-import {BuildOptions} from "./types/config";
+import { BuildOptions } from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export function buildPlugins(options:BuildOptions):webpack.WebpackPluginInstance[] {
@@ -16,6 +15,7 @@ export function buildPlugins(options:BuildOptions):webpack.WebpackPluginInstance
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev)
-        })
+        }),
+        new HotModuleReplacementPlugin()
     ]
 }

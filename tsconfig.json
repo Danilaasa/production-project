@@ -18,9 +18,10 @@
       // allow... позволяет использовать import без звездочки
       "allowSyntheticDefaultImports": true,
     },
+    "include": ["src", "custom.d.ts"],
     "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
-    }
+    },
   }
   }
