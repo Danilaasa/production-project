@@ -18,7 +18,7 @@
       // allow... позволяет использовать import без звездочки
       "allowSyntheticDefaultImports": true,
     },
-    "include": ["src", "custom.d.ts"],
+    "include": ["src", "custom.d.ts", "./config/jest/setupTests.ts"],
     "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
