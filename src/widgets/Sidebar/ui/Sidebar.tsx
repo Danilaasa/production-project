@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import classNames from "classnames";
 import { ThemeSwitcher } from "../../ThemeSwitcher/index";
 import { LangSwitcher } from "../../../widgets/LangSwitcher/ui/LangSwitcher";
-import { Button, ThemeButton } from "../../../shared/ui/Button/Button";
+import { Button } from "../../../shared/ui/Button/Button";
 
 interface SidebarProps {
     className?: string
@@ -25,7 +25,7 @@ export const Sidebar:FC<SidebarProps> = ({ className }) => {
             })} >
             <button data-testid="button" onClick={onToggle} >toggle</button>
             <div className={cls.switchers} >
-                <Button theme={ThemeButton.CLEAR} >s</Button>
+                <Button >s</Button>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} />
             </div>
