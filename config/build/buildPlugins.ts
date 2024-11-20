@@ -17,7 +17,7 @@ export function buildPlugins(options:BuildOptions):webpack.WebpackPluginInstance
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev)
-        })
+        }),
     ]
 
     if (isDev) {

@@ -8,6 +8,11 @@
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+
+  .switchers {
+    flex-direction: column;
+  }
+
 }
 
 .switchers {
@@ -21,3 +26,16 @@
 .lang {
   margin-left: 10px;
 }
+
+.collapsedBtn {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
+  background: none;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0;
+  cursor: pointer;
+  color: var(--inverted-bg-color);
+}
+
