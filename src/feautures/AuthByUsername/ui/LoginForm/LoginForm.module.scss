@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: black;
+}
